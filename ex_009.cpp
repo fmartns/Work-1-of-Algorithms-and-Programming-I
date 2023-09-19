@@ -4,20 +4,19 @@ using namespace std;
 
 int main(){
 
-    float num1;
-    cout << "Digite a primeira nota: ";
-    cin >> num1;
-
-    float num2;
-    cout << "Digite a segunda nota: ";
-    cin >> num2;
-
-    float num3;
-    cout << "Digite a terceira nota: ";
-    cin >> num3;
-
-    float media = (num1 + num2 + num3)/3;
-    cout << "A media foi " << media;
-
+   int valorA;
+   int valorB;
+   int valorC;
+   
+   cout << "informe o valor do primeiro número : " << endl;
+   cin >> valorA; 
+   cout << "informe o valor do segundo número : " << endl;
+   cin >> valorB;
+   cout << "informe o valor do terceiro número : " << endl;
+   cin >> valorC; 
+   
+   cout << "A mediana desses valores é  " << valorB << endl; 
+    
+    
     return 0;
 }
