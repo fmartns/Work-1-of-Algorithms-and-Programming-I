@@ -24,7 +24,7 @@ int main(){
         cout << "O triangulo e isosceles";
     }
     else{
-        cout << "O trinagulo e  escaleno";
+        cout << "O trinagulo e escaleno";
     }
 
     return 0;

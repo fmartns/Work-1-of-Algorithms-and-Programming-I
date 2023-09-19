@@ -4,37 +4,37 @@ using namespace std;
 
 int main(){
 
-    float value;
+    float valor;
     cout << "Valor: ";
-    cin >> value;
+    cin >> valor;
 
-    float option;
+    int opcao;
     cout << "Condicao de pagamento" << endl;
     cout << "[1] A vista em dinheiro ou cheque, recebe 10% de desconto" << endl;
     cout << "[2] A vista no cartao de credito, recebe 15% de desconto" << endl;
     cout << "[3] Em duas vezes, preco normal de etiqueta sem juros" << endl;
     cout << "[4] Em duas vezes, preco normal de etiqueta mais juros de 10%" << endl;
     cout << "Digite a opcao correspondente: ";
-    cin >> option;
+    cin >> opcao;
 
-    if(option == 1){
-        value = value - (value/100*10);
+    if(opcao == 1){
+        valor = valor - (valor/100*10);
     }
-    else if(option == 2){
-        value = value - (value/100*15);
+    else if(opcao == 2){
+        valor = valor - (valor/100*15);
     }
-    else if(option == 3){
-        value = value;
+    else if(opcao == 3){
+        valor = valor;
     }
-    else if(option == 4){
-        value = value + (value/100*10);
+    else if(opcao == 4){
+        valor = valor + (valor/100*10);
     }
     else {
         cout << "Opcao invalida, tente novamente usando os numeros da tabela acima.";
         return 0;
  }
 
-    cout << "Sua compra ficou no valor de R$ " << value;
+    cout << "Sua compra ficou no valor de R$ " << valor;
 
     return 0;
 }

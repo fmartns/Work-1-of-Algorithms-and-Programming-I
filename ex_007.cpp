@@ -31,12 +31,6 @@ int main()
     } else {
         cout <<"erro";
     }
-   
-    
-    
-
-    
-    
-    
+       
     return 0;
 }

@@ -5,23 +5,23 @@ using namespace std;
 int main(){
 
     cout << "Digite os tres angulos do triangulo. " << endl;
-    float angle1;
+    float angulo1;
     cout << "Primeiro angulo: ";
-    cin >> angle1;
+    cin >> angulo1;
 
-    float angle2;
+    float angulo2;
     cout << "Segundo angulo: ";
-    cin >> angle2;
+    cin >> angulo2;
 
-    float angle3;
+    float angulo3;
     cout << "Terceiro angulo: ";
-    cin >> angle3;
+    cin >> angulo3;
 
-    if((angle1+angle2+angle3) == 180){
-        if(angle1 < 90 && angle2 < 90 && angle3 < 90){
+    if((angulo1+angulo2+angulo3) == 180){
+        if(angulo1 < 90 && angulo2 < 90 && angulo3 < 90){
             cout << "Triangulo Acutangulo";
         }
-        else if(angle1 == 90 || angle2 == 90 || angle3 == 90){
+        else if(angulo1 == 90 || angulo2 == 90 || angulo3 == 90){
             cout << "Triangulo Retangulo";
         }
         else{

@@ -18,9 +18,9 @@ int main(){
     cout << "Informe quantos convidados C (pessoas que comem ate 600g) vao comparecer: ";
     cin >> c;
 
-    a = a*300;
-    b = (b*1500);
-    c = (c*600);
+    a = a * 300;
+    b = b * 1500;
+    c = c * 600;
 
     int porcao = a + b + c;
     

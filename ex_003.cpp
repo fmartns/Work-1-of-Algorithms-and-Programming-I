@@ -20,16 +20,16 @@ int main(){
     cout << "Comprimento balanca (lado esquerdo): ";
     cin >> c2;
 
-    float right = p1 * c1;
-    float left = p2 * c2;
+    float direito = p1 * c1;
+    float esquerdo = p2 * c2;
 
-    if(right > left){
+    if(direito > esquerdo){
         cout << "A balanca esta pendendo para direita.";
     } 
-    else if(right < left){
+    else if(direito < esquerdo){
         cout << "A balanca esta pendendo para esquerda.";
     }
-    else if(right == left){
+    else if(direito == esquerdo){
         cout << "A balanca esta equilibrada.";
     }
 
