@@ -4,7 +4,8 @@ using namespace std;
 
 int main(){
 
-    cout << "Informe as tres medidas do triangulo." << endl;
+    // Solicita ao usuário que insira as medidas do triângulo
+    cout << "Informe as três medidas do triângulo." << endl;
     float m1;
     cout << "Primeira medida: ";
     cin >> m1;
@@ -17,14 +18,18 @@ int main(){
     cout << "Terceira medida: ";
     cin >> m3;
 
-    if(m1 == m2 && m2 == m3){
-        cout << "O triangulo e equilatero.";
+    // Verifica se as medidas formam um triângulo
+    if ((m1 + m2) < m3 || (m1 + m3) < m2 || (m2 + m3) < m1) {
+        cout << "Não é um triângulo";
     }
-    else if(m1 == m2 || m2 == m3 || m1 == m3){
-        cout << "O triangulo e isosceles";
+    else if (m1 == m2 && m2 == m3) {
+        cout << "O triângulo é equilátero.";
     }
-    else{
-        cout << "O trinagulo e escaleno";
+    else if (m1 == m2 || m2 == m3 || m1 == m3) {
+        cout << "O triângulo é isósceles";
+    }
+    else {
+        cout << "O triângulo é escaleno";
     }
 
     return 0;

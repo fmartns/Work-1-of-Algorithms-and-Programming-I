@@ -1,35 +1,38 @@
-
-
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
+    // Declaração das variáveis para os coeficientes da equação de segundo grau
     int incognitaA;
     int incognitaB;
     int incognitaC;
     
-    cout << "Na equação do 2° grau apresente respectivamente o valor de A, B e C :" << endl;
-    cout << "valor de A: " << endl;
+    // Solicita ao usuário que insira os valores de A, B e C
+    cout << "Na equacao do 2o grau, apresente respectivamente o valor de A, B e C:" << endl;
+    cout << "Valor de A: ";
     cin >> incognitaA;
-    cout << "valor de B: " << endl;
+    cout << "Valor de B: ";
     cin >> incognitaB;
-    cout << "valor de C: " << endl;
+    cout << "Valor de C: ";
     cin >> incognitaC;
     
-    int discriminante = ((incognitaB*incognitaB) - (4*incognitaA*incognitaC));
+    // Calcula o discriminante (delta) da equação quadrática
+    int discriminante = ((incognitaB * incognitaB) - (4 * incognitaA * incognitaC));
     
-    cout << discriminante << endl;
+    // Exibe o valor do discriminante
+    cout << "Discriminante: " << discriminante << endl;
     
+    // Determina e exibe a natureza das raízes da equação quadrática com base no discriminante
     if (discriminante > 0 ) {
-        cout << "A equação tem duas raízes reais diferentes" << endl; 
+        cout << "A equacao tem duas raizes reais diferentes." << endl; 
     } else if (discriminante == 0) {
-        cout << "A equação tem uma raiz real única" << endl;
+        cout << "A equacao tem uma raiz real unica." << endl;
     } else if (discriminante < 0 ) {
-        cout << "A equação não tem raízes reais" << endl;
+        cout << "A equacao nao tem raizes reais." << endl;
     } else {
-        cout <<"erro";
+        cout << "Erro." << endl;
     }
        
     return 0;
