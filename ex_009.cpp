@@ -17,7 +17,7 @@ int main(){
     cout << "Digite o terceiro valor: ";
     cin >> num3;
 
-    // Verifica e calcula a mediana entre os três valores
+    // Verifica e calcula a mediana entre os três valores |
     if (num1 > num2 && num1 > num3) {
         if (num2 > num3) {
             cout << "A mediana entre os três números é " << num2;
