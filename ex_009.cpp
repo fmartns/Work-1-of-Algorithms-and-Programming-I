@@ -4,7 +4,6 @@ using namespace std;
 
 int main(){
 
-    // Solicita ao usuário que insira três valores
     float num1;
     cout << "Digite o primeiro valor: ";
     cin >> num1;
@@ -17,29 +16,28 @@ int main(){
     cout << "Digite o terceiro valor: ";
     cin >> num3;
 
-    // Verifica e calcula a mediana entre os três valores
     if (num1 > num2 && num1 > num3) {
         if (num2 > num3) {
-            cout << "A mediana entre os três números é " << num2;
+            cout << "A mediana entre os tres numeros e " << num2;
         }
         else {
-            cout << "A mediana entre os três números é " << num3;
+            cout << "A mediana entre os tres numeros e " << num3;
         }
     }
     else if (num2 > num1 && num2 > num3) {
         if (num1 > num3) {
-            cout << "A mediana entre os três números é " << num1;
+            cout << "A mediana entre os tres numeros e " << num1;
         }
         else {
-            cout << "A mediana entre os três números é " << num3;
+            cout << "A mediana entre os tres numeros e " << num3;
         }
     }
     else {
         if (num1 > num2) {
-            cout << "A mediana entre os três números é " << num1;
+            cout << "A mediana entre os tres numeros e " << num1;
         }
         else {
-            cout << "A mediana entre os três números é " << num2;
+            cout << "A mediana entre os tres numeros e " << num2;
         }
     }
     

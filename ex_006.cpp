@@ -4,35 +4,34 @@ using namespace std;
 
 int main(){
 
-    // Solicita ao usuário que insira os ângulos do triângulo
-    cout << "Digite os três ângulos do triângulo. " << endl;
+    cout << "Digite os tres angulos do triangulo. " << endl;
     float angulo1;
-    cout << "Primeiro ângulo: ";
+    cout << "Primeiro angulo: ";
     cin >> angulo1;
 
     float angulo2;
-    cout << "Segundo ângulo: ";
+    cout << "Segundo angulo: ";
     cin >> angulo2;
 
     float angulo3;
-    cout << "Terceiro ângulo: ";
+    cout << "Terceiro angulo: ";
     cin >> angulo3;
 
-    // Verifica se a soma dos ângulos é igual a 180 graus
+    // Verifica se a soma dos angulos é igual a 180 graus
     if ((angulo1 + angulo2 + angulo3) == 180) {
-        // Verifica o tipo de triângulo com base nos ângulos
+        // Verifica o tipo de triangulo com base nos angulos
         if (angulo1 < 90 && angulo2 < 90 && angulo3 < 90) {
-            cout << "Triângulo Acutângulo";
+            cout << "Triangulo Acutangulo";
         }
         else if (angulo1 == 90 || angulo2 == 90 || angulo3 == 90) {
-            cout << "Triângulo Retângulo";
+            cout << "Triangulo Retangulo";
         }
         else {
-            cout << "Triângulo Obtusângulo";
+            cout << "Triangulo Obtusangulo";
         }
     }
     else {
-        cout << "Os valores não formam um triângulo.";
+        cout << "Os valores nao formam um triangulo.";
     }
 
     return 0;

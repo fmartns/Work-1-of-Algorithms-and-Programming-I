@@ -4,31 +4,27 @@ using namespace std;
 
 int main(){
 
-    // Exibe uma mensagem inicial para o usuário
-    cout << "Calculadora de Porção" << endl;
+    cout << "Calculadora de porcao" << endl;
 
-    // Declaração de variáveis para o número de convidados de cada grupo
     int a;
-    cout << "Informe quantos convidados A (pessoas que comem até 300g) vão comparecer: ";
+    cout << "Informe quantos convidados A (pessoas que comem ate 300g) vao comparecer: ";
     cin >> a;
 
     int b;
-    cout << "Informe quantos convidados B (pessoas que comem até 1500g) vão comparecer: ";
+    cout << "Informe quantos convidados B (pessoas que comem ate 1500g) vao comparecer: ";
     cin >> b;
 
     int c;
-    cout << "Informe quantos convidados C (pessoas que comem até 600g) vão comparecer: ";
+    cout << "Informe quantos convidados C (pessoas que comem ate 600g) vao comparecer: ";
     cin >> c;
 
-    // Cálculo da quantidade total de comida necessária em gramas
-    a = a * 300;   // Convidados A comem até 300g
-    b = b * 1500;  // Convidados B comem até 1500g
-    c = c * 600;   // Convidados C comem até 600g
+    a = a * 300;
+    b = b * 1500;
+    c = c * 600;
 
-    int porcao = a + b + c; // Total de comida necessário em gramas
+    int porcao = a + b + c;
     
-    // Exibe a quantidade ideal de comida para os convidados informados
-    cout << "A porção ideal para os convidados informados é de " << porcao << " gramas";
+    cout << "A porcao ideal para os convidados informados e de " << porcao << " gramas";
 
     return 0;
 }

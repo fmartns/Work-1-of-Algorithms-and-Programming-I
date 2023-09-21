@@ -4,7 +4,6 @@ using namespace std;
 
 int main(){
 
-    // Declaração de variáveis
     float valor;
     cout << "Valor: ";
     cin >> valor;
@@ -18,25 +17,23 @@ int main(){
     cout << "Digite a opcao correspondente: ";
     cin >> opcao;
 
-    // Lógica para calcular o valor final com base na opção escolhida
     if(opcao == 1){
-        valor = valor - (valor/100*10); // Desconto de 10%
+        valor = valor - (valor/100*10);
     }
     else if(opcao == 2){
-        valor = valor - (valor/100*15); // Desconto de 15%
+        valor = valor - (valor/100*15);
     }
     else if(opcao == 3){
-        // Nenhuma alteração no valor, pagamento em duas vezes sem juros
+        valor = valor;
     }
     else if(opcao == 4){
-        valor = valor + (valor/100*10); // Juros de 10% em duas vezes
+        valor = valor + (valor/100*10);
     }
     else {
         cout << "Opcao invalida, tente novamente usando os numeros da tabela acima.";
         return 0;
     }
 
-    // Exibe o valor final da compra
     cout << "Sua compra ficou no valor de R$ " << valor;
 
     return 0;
